@@ -40,9 +40,29 @@ function ManagerDashboard() {
           <div className="bg-white rounded-lg shadow-md p-6">
             <h3 className="text-lg font-semibold mb-2">Performance Reports</h3>
             <p className="text-gray-600">Review team performance and generate reports.</p>
+            <Link to="/travelform">
+            <button className="mt-4 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-500 transition">
+             View All Travels
+            </button>
+            </Link>
+          </div>
+          <div className="bg-white rounded-lg shadow-md p-6">
+            <h3 className="text-lg font-semibold mb-2">Performance Reports</h3>
+            <p className="text-gray-600">Review team performance and generate reports.</p>
+            <Link to="/expenseform">
+            <button className="mt-4 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-500 transition">
+             View All expenses
+            </button>
+            </Link>
+          </div>
+          <div className="bg-white rounded-lg shadow-md p-6">
+            <h3 className="text-lg font-semibold mb-2">Performance Reports</h3>
+            <p className="text-gray-600">Review team performance and generate reports.</p>
+            <Link to="/report">
             <button className="mt-4 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-500 transition">
               View Reports
             </button>
+            </Link>
           </div>
         </section>
       </main>

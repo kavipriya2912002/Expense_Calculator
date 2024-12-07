@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Use this if using React Router for navigation
 
 function AdminDashboard() {
   return (
@@ -33,9 +34,29 @@ function AdminDashboard() {
           <div className="bg-white rounded-lg shadow-md p-6">
             <h3 className="text-lg font-semibold mb-2">Reports</h3>
             <p className="text-gray-600">Generate and download reports.</p>
+            <Link to="/report">
             <button className="mt-4 bg-red-600 text-white px-4 py-2 rounded hover:bg-red-500 transition">
-              View Reports
+              Create Reports
             </button>
+            </Link>
+          </div>
+          <div className="bg-white rounded-lg shadow-md p-6">
+            <h3 className="text-lg font-semibold mb-2">Travel Details</h3>
+            <p className="text-gray-600">Generate and download reports.</p>
+            <Link to="/travelcard">
+            <button className="mt-4 bg-red-600 text-white px-4 py-2 rounded hover:bg-red-500 transition">
+              View Travel Details
+            </button>
+            </Link>
+          </div>
+          <div className="bg-white rounded-lg shadow-md p-6">
+            <h3 className="text-lg font-semibold mb-2">Expense Details</h3>
+            <p className="text-gray-600">Generate and download reports.</p>
+            <Link to="/expensecard">
+            <button className="mt-4 bg-red-600 text-white px-4 py-2 rounded hover:bg-red-500 transition">
+              View Expense Details
+            </button>
+            </Link>
           </div>
           <div className="bg-white rounded-lg shadow-md p-6">
             <h3 className="text-lg font-semibold mb-2">System Settings</h3>

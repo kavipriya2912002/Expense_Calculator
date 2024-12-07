@@ -1,5 +1,4 @@
 import { BrowserRouter , Route, Routes} from 'react-router-dom'
-import Home from './pages/Home'
 import Loginpage from './pages/Loginpage'
 import TravelForm from './pages/TravelForm'
 import ExpensesForm from './pages/ExpenseForm'
@@ -7,6 +6,8 @@ import ReportForm from './pages/ReportForm'
 import UserDashboard from './pages/UserDashboard'
 import AdminDashboard from './pages/AdminDashboard'
 import ManagerDashboard from './pages/ManagerDashboard'
+import DashboardTravelForm from './pages/DashboardTravelForm'
+import DashboardExpenseForm from './pages/DashboardExpenseForm'
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
         <Route path='/userdashboard' element={<UserDashboard/>}/>
         <Route path='/admindashboard' element={<AdminDashboard/>}/>
         <Route path='/managerdashboard' element={<ManagerDashboard/>}/>
+        <Route path='/travelcard' element={<DashboardTravelForm/>}/>
+        <Route path='/expensecard' element={<DashboardExpenseForm/>}/>
+
+
       </Routes>
     </BrowserRouter>
   )
