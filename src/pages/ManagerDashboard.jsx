@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Use this if using React Router for navigation
 
 function ManagerDashboard() {
   return (
